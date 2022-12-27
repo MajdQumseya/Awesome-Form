@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "NorseBold";
+    src: url("./Norse-Bold.otf");
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    font-family: "NorseBold", 'Arial', sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.left-container {
+    background: url(./space.jpeg);
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo{
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-top: 50%;
+}
+
+.logo>img{
+    width: 100px;
+    height: 100px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.right-container {
+    background-color: white;
+    flex-basis: 60%;
+    display: flex;
+    
+    align-items: center;
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 15px;
+}
+
+button[type="submit"] {
+    background-color: #596D48;
+    width: 200px;
+    color:white;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 40px 0 0 30px;
+}
+
+.account-text{
+    margin-left: 30px;
+}
+
