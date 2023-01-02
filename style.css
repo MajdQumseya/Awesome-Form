@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: black;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .main {
@@ -69,16 +69,30 @@ body {
 
 button[type="submit"] {
     background-color: #596D48;
+    font-size: 16px;
     width: 200px;
     color: white;
-    padding: 12px;
-    border-radius: 12px;
-    margin: 40px 0 0 30px;
+    padding: 11px;
+    border-radius: 10px;
+    margin: 20px 0 0 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+a.copyright,
+a.copyright:active,
+a.copyright:visited {
+    color: white;
 
 }
 
 .account-text {
-    margin-left: 30px;
+    margin-left: 40px;
+
+}
+
+.login-text {
+    color: #596D48;
+    text-decoration: none;
 }
 
 .text-container {
@@ -87,6 +101,7 @@ button[type="submit"] {
     letter-spacing: .3px;
     padding-left: 40px;
     max-width: 80%;
+    margin-bottom: 18px;
 }
 
 .form-container {
@@ -96,6 +111,7 @@ button[type="submit"] {
     flex-direction: column;
     padding-left: 40px;
 
+
     -webkit-box-shadow: 0px 6px 6px 2px rgba(235, 236, 237, 0.77);
     -moz-box-shadow: 0px 6px 6px 2px rgba(235, 236, 237, 0.77);
     box-shadow: 0px 6px 6px 2px rgba(235, 236, 237, 0.77);
@@ -103,6 +119,47 @@ button[type="submit"] {
 
 .form {
     display: flex;
-    flex-grow: 1;
-    flex-basis: 100%;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 50px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    padding: 6px;
+    width: 260px;
+    border-radius: 5px;
+  
+}
+
+input:focus {
+    border: #005073;
+    -webkit-box-shadow: 8px 7px 5px -1px rgba(130, 122, 130, 1);
+    -moz-box-shadow: 8px 7px 5px -1px rgba(130, 122, 130, 1);
+    box-shadow: 8px 7px 5px -1px rgba(130, 122, 130, 1);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-text{
+    color: red;
+    font-size: 10px;
+    margin: 0;
+}
+
+label {
+    font-size: 10px;
+    letter-spacing: .1rem;
 }

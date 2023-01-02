@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Native Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -16,42 +20,70 @@
                 <img src="./odin-logo.png" alt="Odin Logo">
                 <h3 class="logo-text">ODIN</h3>
             </div>
-            <p class="copyright">Made by Majd Qumseya Photo by Blank</p>
+            <div>
+                <p class="copyright">Made by <a class="copyright" href="https://github.com/MajdQumseya">Majd Qumseya</a>
+                </p>
+                <p class="copyright">Photo by <a class="copyright"
+                        href="https://unsplash.com/@aldebarans?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aldebaran
+                        S</a> on <a class="copyright" href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+
         </div>
         <div class="right-container">
             <div class="parent-container">
                 <div class="text-container">
                     <p>This is not a real service! You know you need somehting like this in your life to help you
-                        realize your deepest dreams. <br> Sign up <i>Now</i> to get started.</p>
-                    <p>You <i>Know </i>You Want To!</p>
+                        realize your deepest dreams. <br> Sign up <i>now</i> to get started.</p>
+                    <p>You <i>know </i>you want to.</p>
                 </div>
                 <div class="form-container">
                     <h3>Let's do this!</h3>
-                 
+
                     <form action="/" method="post" class="form">
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="fname">
 
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="lname">
+                        <div class="input-group">
+                            <div class="input">
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                            <div class="input">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lname" name="lname">
+                            </div>
+                        </div>
 
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
 
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <div class="input-group">
+                            <div class="input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="input">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
 
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
 
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <div class="input-group">
+                            <div class="input">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" class="error">
+                                <p class="error-text">*Passwords do not match</p>
+                            </div>
+                            <div class="input">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="confirm-password" class="error">
+                            </div>
+                        </div>
+
                     </form>
-              
-                   
+
+
                 </div>
                 <button type="submit">Create Account</button>
-                <p class="account-text">Already have an account? <a href="http://google.com">Log In</a></p>
+                <p class="account-text">Already have an account? <a class="login-text" href="http://google.com">Log
+                        In</a></p>
             </div>
         </div>
     </div>
